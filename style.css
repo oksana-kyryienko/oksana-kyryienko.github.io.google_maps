@@ -1,0 +1,80 @@
+body, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#map {
+  width: 80vw;
+  height: 80vh;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+
+  z-index: 1;
+  width: 15vw;
+ 
+  position: absolute;
+  top: 12%;
+  left: 67%;
+}
+
+.headline {
+  display: block;
+  background-color: white;
+    padding-bottom: 10px;
+}
+
+.button {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 40px;
+
+  text-decoration: none;
+  background-color: white;
+  border: none;
+
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+
+  transition: all 0.3s;
+
+  opacity: 85%;
+}
+
+.button:hover {
+  background-color: rgb(231, 228, 228);
+}
+
+#select {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  opacity: 90%;
+}
+
+.selected {
+  margin-top: 5px;
+}
+
