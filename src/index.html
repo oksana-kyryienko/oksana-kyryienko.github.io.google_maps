@@ -8,29 +8,27 @@
   <link rel="stylesheet"  href="./style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="flex_container">
-      <button 
-        class="button" 
-        id="push" 
-        data-target="#collapseExample">Hide Filters
+  <div  class="container">
+    <div  class="flex_container">
+      <button class="button"  id="push"  data-target="#collapseExample" >Hide Filters
       </button>
-      <div class="select_container" id="select">
-        <h5 class="headline">Building Type:
+      <div  class="select_container"  id="select">
+        <h5  class="headline">Building Type:
           <br>
           <div class="selected">
-            <select class="filter" id="list">
-              <option value="office">Office</option>
-              <option value="warehouse">Warehouse</option>
-            </select>
+            <div class="filter" id="list">
+              <input data-marker="office" id="office" type="radio" name="myMarkers">Office</input>
+              <br>
+              <input data-marker="warehouse" id="warehouse" type="radio" name="myMarkers">Warehouse</input>
+              <br>
+              <input data-marker="showall" id="showall" type="radio" name="myMarkers">Show All</input>
+            <div>
           </div>
         </h5>
       </div>
     </div>
-    <div id="map">
-    </div>
+    <div id="map"></div>
   </div>
-  
   <script src="./map.js"></script>
   <script
     async

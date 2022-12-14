@@ -31,7 +31,6 @@ body, h5 {
 .headline {
   display: block;
   background-color: white;
-    padding-bottom: 10px;
 }
 
 .button {
@@ -70,11 +69,12 @@ body, h5 {
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 60px;
   opacity: 90%;
 }
 
 .selected {
   margin-top: 5px;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
