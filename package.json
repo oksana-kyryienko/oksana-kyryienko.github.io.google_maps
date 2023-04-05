@@ -1,7 +1,16 @@
 {
+  "homepage": "https://oksana-kyryienko.github.io/google_maps/",
   "type": "module",
-  "dependencies": {},
+  "dependencies": {
+    "build": "^0.1.4",
+    "gh-pages": "^4.0.0"
+  },
   "devDependencies": {
     "eslint": "^8.29.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
