@@ -1,4 +1,4 @@
-[DEMO LINK](https://remarkable-meringue-d99375.netlify.app/)
+[DEMO LINK](https://cheery-palmier-f43873.netlify.app/)
 
 Description of the project
 This project implements a Google map display with several filters. The user can choose what types of places he wants to see on the map: offices, cafes or all at once. For this, the "Show filter" button is used, after clicking on which the user can mark the desired options in the checkboxes.
