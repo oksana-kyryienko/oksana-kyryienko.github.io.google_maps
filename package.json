@@ -16,9 +16,9 @@
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
-    "build": "npm run babel && xcopy src\\index.html dist\\index.html ",
+    "build": "npm run babel && cp src/index.html dist/index.html && cp src/style.css dist/style.css",
     "publish": "npm run build && gh-pages -d dist",
     "lint": "eslint",
-    "babel": "babel src/map.js -d dist/maip.js"
+    "babel": "babel src/map.js -d dist/map.js"
   }
 }
