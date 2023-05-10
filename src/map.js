@@ -136,3 +136,5 @@ function getEveryMarker() {
 function markersHideInfoWindow(markers) {
   markers.forEach((i) => i.infowindow && i.infowindow.close());
 }
+
+
