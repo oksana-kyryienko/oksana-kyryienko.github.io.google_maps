@@ -2,11 +2,14 @@
 /* eslint-disable no-undef */
 
 const knopka = document.getElementById('push');
-knopka.addEventListener('click', toggleSelect);
+
 function toggleSelect() {
   const shadow = document.getElementById('select');
   shadow.style.display = shadow.style.display === 'none' ? 'block' : 'none';
 }
+
+knopka.addEventListener('click', toggleSelect);
+
 const button = document.querySelector('[data-target="#collapseExample"]');
 function initMap() {
   const element = document.getElementById('map');
