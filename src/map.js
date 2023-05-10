@@ -11,6 +11,20 @@ function toggleSelect() {
 
 const button = document.querySelector('[data-target="#collapseExample"]');
 
+function initMap() {
+  const element = document.getElementById('map');
+  const options = {
+    zoom: 10,
+    center: {
+      lat: 50.4501,
+      lng: 30.5234,
+    },
+    myMapId: 'e57115ac55518495',
+  };
+  map = new google.maps.Map(element, options);
+  setMarkers();
+}
+
 button.addEventListener('click', function () {
   button.innerText =
     button.innerText.toLowerCase() === 'hide filters'
@@ -59,20 +73,6 @@ const myMarkers = {
 };
 
 radios.forEach((radio) => radio.addEventListener('click', toggleMarkers));
-
-function initMap() {
-  const element = document.getElementById('map');
-  const options = {
-    zoom: 10,
-    center: {
-      lat: 50.4501,
-      lng: 30.5234,
-    },
-    myMapId: 'e57115ac55518495',
-  };
-  map = new google.maps.Map(element, options);
-  setMarkers();
-}
 
 function setMarkers() {
   for (let group in myMarkers) {
