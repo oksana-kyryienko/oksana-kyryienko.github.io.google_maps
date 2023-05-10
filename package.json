@@ -5,8 +5,9 @@
     "google-maps-api-loader": "^1.1.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.4",
-    "@babel/preset-env": "^7.21.4",
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
     "babel-loader": "^9.1.2",
     "eslint": "^8.29.0",
     "gh-pages": "^4.0.0",
@@ -15,8 +16,9 @@
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "npm run babel && xcopy src\\index.html dist\\index.html ",
     "publish": "npm run build && gh-pages -d dist",
-    "lint": "eslint ."
+    "lint": "eslint",
+    "babel": "babel src/map.js -d dist/maip.js"
   }
 }
